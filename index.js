@@ -32,7 +32,7 @@ app.use((err, req, res, next) => {
 });
 
 // All Routes
-app.use('/api/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/api/tmp', express.static(path.join(__dirname, 'tmp')));
 app.use(categoriesRoutes);
 app.use(productsRoutes);
 app.use(tableRoutes);
